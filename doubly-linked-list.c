@@ -54,9 +54,9 @@ int main()
 		printf("----------------------------------------------------------------\n");
 
 		printf("Command = ");
-		scanf(" %c", &command); //문자받아와 command주소에 저장
+		scanf(" %c", &command); //문자받아와 command주소에 저장한다
 
-		switch(command) { //command가 어떤것인지 비교
+		switch(command) { //command가 어떤것인지 비교한다
 		case 'z': case 'Z': //command가 z,Z 일경우
 			initialize(&headnode); //initialize함수호출 headnode주소 매계변수로 넣어준다
 			break;
@@ -102,7 +102,7 @@ int main()
 
 	}while(command != 'q' && command != 'Q'); //command가 q,Q가 아니라면 계속 반복
 
-	return 1; //정상실행 1
+	return 1; //정상실행
 }
 
 
